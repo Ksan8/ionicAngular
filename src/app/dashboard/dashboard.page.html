@@ -8,6 +8,9 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
+  <h2>Zoom/scale issue</h2>
+  <p>Tracked in: <a href="https://github.com/ionic-team/ionic-framework/issues/22805">Ionic issue #22805</a></p>
+
   <form (ngSubmit)="onSubmit()" novalidate>
     <ion-item>
       <ion-label position="stacked">Dummy input</ion-label>
@@ -15,4 +18,10 @@
     </ion-item>
     <ion-button type="submit" expand="block">Submit and Route</ion-button>
   </form>
+
+  <h2><code>ion-modal</code> issue</h2>
+  <!-- <p>Tracked in: <a href="">Ionic issue #</a></p> -->
+  <p>More info: <a href="https://dequeuniversity.com/rules/axe/4.1/aria-dialog-name?application=AxeChrome">ARIA dialog and alertdialog must have accessible name</a></p>
+
+  <ion-button (click)="showModal()">Show modal</ion-button>
 </ion-content>
